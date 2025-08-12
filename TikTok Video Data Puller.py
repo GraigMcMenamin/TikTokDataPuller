@@ -31,7 +31,6 @@ def get_access_token():
 
     url = "https://open.tiktokapis.com/v2/oauth/token/"
     payload = {
-        # Hard coded credentials for Professor Schapsis
         "client_key": client_key,
         "client_secret": client_secret,
         "grant_type": "client_credentials"
@@ -308,4 +307,5 @@ download_button = ttk.Button(frame, text="Download CSV", state=tk.DISABLED, comm
 download_button.grid(column=0, row=8)
 
 # Start the Tkinter main loop
+
 window.mainloop()
